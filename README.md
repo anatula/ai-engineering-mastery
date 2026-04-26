@@ -1,4 +1,4 @@
-# AI Inner Workings: From Neural Networks to Agents, Tools, Protocols, and Production Systems
+# AI Inner Workings: From Neural Networks to Agents, Tools, Protocols and Production Systems
 
 Free university lectures, engineering workshops, and industry deep dives on how modern AI systems actually work under the hood.
 
