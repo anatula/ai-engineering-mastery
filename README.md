@@ -31,7 +31,7 @@ From neurons to word vectors, plus hands-on RAG.
 | 7 | Introduction to Neural Networks and Deep Learning | MIT (YouTube) | Applied deep learning | 90 min | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |
 | 8 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | Remaining 40 min (capstone) | 40 min | https://www.youtube.com/watch?v=zjkBMFhNj_g |
 
-After Chapter 1: Neural network fundamentals, embeddings, RAG pipelines, and a complete understanding of how LLMs work.
+After Chapter 1: Neural network fundamentals, embeddings, and a complete understanding of how LLMs work.
 
 ---
 
