@@ -12,6 +12,7 @@ Free university lectures, engineering workshops, and industry deep dives on how 
 6. Chapter 6: Orchestration and Workflows
 7. Chapter 7: MCP -- The Universal Tool Standard
 8. Chapter 8: Agent Skills and Context Engineering
+9. Chapter 9: Case Study – SSD Offloading for Massive Models (oLLM)
 
 ---
 
@@ -127,7 +128,6 @@ watsonx Orchestrate and n8n: agentic AI vs. workflow engines converging. Include
 | 9 | Merkle trees in 5 minutes | How Cursor avoids re-indexing (generic) | 10 min | https://www.youtube.com/watch?v=Y4T3Y5wHixc |
 | 10 | How Git and Cursor sync code | Merkle trees explained (Cursor + Git by Ben Dicken) | 9 min | https://www.youtube.com/watch?v=86Elcm_6X_Y |
 | 11 | Turbopuffer architecture (CEO interview) | Vector DB on object storage | 65 min | https://www.audible.in/podcast/Building-serverless-vector-search-with-Turbopuffer-CEO-Simon-Eskildsen/B0G27BLQZV |
-| 12 | Inference Engineering (The infrastructure of AI) | Philip Kiely + Ben Dicken on inference at scale | 60 min | https://www.youtube.com/watch?v=N_Nqlt8Z8kg |
 
 ### Optional Deep Dives
 
@@ -190,6 +190,24 @@ Level 2: Scripts, templates, and resources (loaded only when the skill explicitl
 As conversations grow longer, context quality degrades. Failed attempts and dead-end explorations accumulate in the context window, confusing the model. The fix: regularly summarize and start fresh, or use structured boundaries (like the spec-driven workflow from Chapter 4) to separate current work from historical noise.
 
 After Chapter 8: Reusable agent skills, effective context management across long sessions, and how RAG, MCP, and Skills work together.
+
+---
+
+## Chapter 9: Case Study – SSD Offloading for Massive Models (oLLM)
+
+Quantization (Chapter 3) trades quality for memory. SSD offloading trades *speed* for memory while preserving full precision. oLLM runs an 80B model on 8GB VRAM at ~0.5 tokens/second.
+
+**How it works:** Layer weights load from SSD → GPU one at a time. KV cache writes to SSD, loads back when needed. FlashAttention-2 avoids materializing the full attention matrix. Chunked MLP splits large intermediate computations.
+
+| # | Resource | Topic | Time | Link |
+|---|----------|-------|------|------|
+| 1 | vLLM: PagedAttention (blog) | Understanding KV cache management. Read first half. | 20 min | https://blog.vllm.ai/2023/06/20/vllm.html |
+| 2 | Inference Engineering (The infrastructure of AI) | Philip Kiely + Ben Dicken on inference at scale. Prerequisite before oLLM. | 60 min | https://www.youtube.com/watch?v=N_Nqlt8Z8kg |
+| 3 | oLLM GitHub | Full-precision 80B model on 8GB VRAM via SSD offloading. | Article | https://github.com/Mega4alik/ollm |
+
+**Checkpoint:** Explain the difference between PagedAttention (vLLM) and SSD offloading (oLLM).
+
+After Chapter 9: Understanding of alternative memory optimization strategies beyond quantization, and when to apply each.
 
 ---
 
@@ -289,3 +307,4 @@ https://github.com/Ruhal-Doshi/skill-depot
 - Chapter 6: How Cursor and enterprise orchestrators work in production (includes the Pragmatic Engineer deep dive).
 - Chapter 7: How MCP gives agents universal tool access
 - Chapter 8: How Skills and context engineering give agents reusable workflows and disciplined context management.
+- Chapter 9: SSD offloading as an alternative memory strategy to quantization for massive models.
