@@ -6,7 +6,7 @@ Free university lectures, engineering workshops, and industry deep dives on how 
 
 1. Chapter 1: Foundations of Neural Learning
 2. Chapter 2: From Embeddings to Transformers
-3. Chapter 3: Agentic Coding and Local LLMs
+3. Chapter 3: LLM Engineering (RAG, Vector DBs, Prompting, Local LLMs, Quantization)
 4. Chapter 4: Harness Engineering
 5. Chapter 5: Sandboxing and Security
 6. Chapter 6: Orchestration and Workflows
@@ -31,7 +31,7 @@ From neurons to word vectors, plus hands-on RAG.
 | 7 | Introduction to Neural Networks and Deep Learning | MIT (YouTube) | Applied deep learning | 90 min | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |  | [notes/ch1/07_mit_deep_learning_intro.md](notes/ch1/07_mit_deep_learning_intro.md) |
 | 8 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | Remaining 40 min (capstone) | 40 min | https://www.youtube.com/watch?v=zjkBMFhNj_g |  | [notes/ch1/08_intro_llms_capstone.md](notes/ch1/08_intro_llms_capstone.md) |
 
-After Chapter 1: Neural network fundamentals, embeddings, and a complete understanding of how LLMs work.
+**After Chapter 1:** Neural network fundamentals, embeddings, and a complete understanding of how LLMs work.
 
 ---
 
@@ -47,13 +47,13 @@ The architecture behind modern AI.
 | 4 | Andrej Karpathy -- Let's build GPT | Hands-on transformer (first 45 min) | 45 min | https://www.youtube.com/watch?v=kCc8FmEb1nY |  | [notes/ch2/04_build_gpt_karpathy.md](notes/ch2/04_build_gpt_karpathy.md) |
 | 5 | Attention is All You Need (paper explained) | Yannic Kilcher | 35 min | https://www.youtube.com/watch?v=ZXuidhZKSGk |  | [notes/ch2/05_attention_paper_explained.md](notes/ch2/05_attention_paper_explained.md) |
 
-After Chapter 2: How transformers work and how to build a small GPT.
+**After Chapter 2:** How transformers work and how to build a small GPT.
 
 ---
 
-## Chapter 3: LLM Engineering (RAG, Vector DBs, Prompting, Local LLMs)
+## Chapter 3: LLM Engineering (RAG, Vector DBs, Prompting, Local LLMs, Quantization)
 
-Hands-on building with LLMs: RAG pipelines, vector databases, prompt engineering, function calling, and quantization for running models on consumer hardware.
+Hands-on building with LLMs: RAG pipelines, vector databases, prompt engineering, function calling, quantization (including TurboQuant), and running models on consumer hardware.
 
 | # | Resource | Author/Source | Topic | Time | Priority | Link | Done | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -66,19 +66,21 @@ Hands-on building with LLMs: RAG pipelines, vector databases, prompt engineering
 | 7 | Quantization Explained | SitePoint | 4-bit vs FP16 memory trade-offs | Article | Must | https://www.sitepoint.com/quantization-explained-q4km-vs-awq-vs-fp16-for-local-llms/ |  | [notes/ch3/07_quantization_explained.md](notes/ch3/07_quantization_explained.md) |
 | 8 | Ollama tutorial (run Llama 3 locally) | YouTube | Hands-on local LLMs | 15 min | Must | https://www.youtube.com/watch?v=WxYC9-hBM_g |  | [notes/ch3/08_ollama_tutorial.md](notes/ch3/08_ollama_tutorial.md) |
 | 9 | Build a code agent from scratch | YouTube | Hands-on open code | 60 min | Must | https://www.youtube.com/watch?v=8fFH5e4WnPA |  | [notes/ch3/09_code_agent_from_scratch.md](notes/ch3/09_code_agent_from_scratch.md) |
-| 10 | Claude Code Deep Dive | Andrew Brown / freeCodeCamp | Comprehensive 12-hour course. Optional for daily users. | 12 hours | Optional | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/ch3/10_claude_code_deep_dive.md](notes/ch3/10_claude_code_deep_dive.md) |
+| **10** | **TurboQuant Explained (Primer)** | **Caleb Writes Code** | **What TurboQuant solves, KV cache intuition, vector quantization basics** | **11 min** | **Must** | **https://www.youtube.com/watch?v=7V0Vt2QzMDk** |  | **[notes/ch3/10_turboquant_primer.md](notes/ch3/10_turboquant_primer.md)** |
+| **11** | **TurboQuant Interactive Demo** | **Arkaung** | **Complete deep dive: random rotation, Lloyd-Max codebook, MSE vs inner product** | **30-45 min** | **Must** | **https://arkaung.github.io/interactive-turboquant/** |  | **[notes/ch3/11_turboquant_interactive.md](notes/ch3/11_turboquant_interactive.md)** |
+| **12** | **TurboQuant Reality Check** | **Soul Care / Two Minute Papers** | **Critical analysis of Google's claims, real-world impact** | **~15 min** | **Optional** | **https://www.youtube.com/watch?v=haoAI2lIZ74** |  | **[notes/ch3/12_turboquant_reality_check.md](notes/ch3/12_turboquant_reality_check.md)** |
 
-Quantization Basics:
+**Quantization Deep Dive:**
 
-FP16 (full precision) stores each model weight in 16 bits (2 bytes). A 7-billion parameter model at FP16 requires approximately 14GB of VRAM just for the weights, which exceeds most consumer GPUs.
+*Traditional 4-bit quantization (Q4_K_M, AWQ)* reduces each weight to 4 bits independently. Simple, effective, 1-3% quality loss.
 
-4-bit quantization reduces each weight to 4 bits (0.5 bytes), shrinking the same 7B model to roughly 3.5-4.5GB of memory. The trade-off: 1-3% quality loss, but the model runs on a laptop.
+**TurboQuant** uses *vector quantization*: groups of weights are quantized together as vectors, preserving more of the high-dimensional structure. The interactive demo shows how random rotation + Lloyd-Max codebook generation beats scalar quantization.
 
-The key distinction: FP16 is used in production serving where quality is non-negotiable and GPU budgets allow it. 4-bit quantization is how the same model runs locally on a MacBook or consumer GPU.
+**KV Cache Quantization (TurboQuant's real win):** During inference, the KV cache grows with sequence length. TurboQuant can compress it aggressively (2-3 bits) because the cache has different statistical properties than model weights.
 
-Different 4-bit methods exist: Q4_K_M (GGUF format, best for CPU and Apple Silicon via Ollama/LM Studio) vs AWQ (optimized for NVIDIA GPU inference). For local development, Ollama with Q4_K_M is the path of least resistance.
+**Reality check (per the optional critique):** Google's reported "10x compression" claims deserve skepticism. The real value is in KV cache compression for long contexts, not replacing weight quantization entirely.
 
-After Chapter 3: RAG pipelines, vector databases, prompt engineering, function calling, quantized local LLMs, memory/quality trade-offs, and basic coding agents.
+**After Chapter 3:** RAG pipelines, vector databases, prompt engineering, function calling, quantized local LLMs (FP16 vs 4-bit vs TurboQuant), memory/quality trade-offs, and basic coding agents.
 
 ---
 
@@ -92,7 +94,7 @@ After Chapter 3: RAG pipelines, vector databases, prompt engineering, function c
 | 4 | Anthropic Agent Teams | Anthropic Docs | Lead + Teammates pattern | Article | https://code.claude.com/docs/en/agent-teams |  | [notes/ch4/04_anthropic_agent_teams.md](notes/ch4/04_anthropic_agent_teams.md) |
 | 5 | Spec-Driven Development Workshop | Unlearn | Write structured specs, refine prompts, stop agents from guessing wrong | 120 min | https://www.youtube.com/live/inKOU-ltbFc |  | [notes/ch4/05_spec_driven_development.md](notes/ch4/05_spec_driven_development.md) |
 
-After Chapter 4: Why agent architecture matters more than model choice, how multi-agent systems are structured, and how spec-driven development brings engineering discipline to agent workflows.
+**After Chapter 4:** Why agent architecture matters more than model choice, how multi-agent systems are structured, and how spec-driven development brings engineering discipline to agent workflows.
 
 ---
 
@@ -107,7 +109,7 @@ Most sandboxes focus on preventing writes. Reading SSH keys plus network access 
 | 3 | Lima | Lima GitHub | Open-source macOS Linux VMs, Virtualization.framework | Article | https://github.com/lima-vm/lima |  | [notes/ch5/03_lima_vm.md](notes/ch5/03_lima_vm.md) |
 | 4 | Tart | Tart GitHub | CI-focused sandboxing, OCI images, Softnet network filtering | Article | https://github.com/cirruslabs/tart |  | [notes/ch5/04_tart_sandboxing.md](notes/ch5/04_tart_sandboxing.md) |
 
-After Chapter 5: Safe agent execution with --dangerously-skip-permissions inside proper isolation, understanding of Docker Sandboxes microVM architecture, and security designed into the workflow.
+**After Chapter 5:** Safe agent execution with --dangerously-skip-permissions inside proper isolation, understanding of Docker Sandboxes microVM architecture, and security designed into the workflow.
 
 ---
 
@@ -134,8 +136,9 @@ watsonx Orchestrate and n8n: agentic AI vs. workflow engines converging. Include
 | Resource | Topic | Time | Link | Done | Notes |
 |----------|-------|------|------| --- | --- |
 | CocoIndex (open-source) | Live codebase indexing for RAG with incremental updates | 25 min | https://www.youtube.com/watch?v=G3WstvhHO24 |  | [notes/ch6/optional_cocoindex.md](notes/ch6/optional_cocoindex.md) |
+| Claude Code Deep Dive (Andrew Brown / freeCodeCamp) | Comprehensive 12-hour course | 12 hours | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/ch6/optional_claude_code_deep_dive.md](notes/ch6/optional_claude_code_deep_dive.md) |
 
-After Chapter 6: Production agent architecture, evaluation, and orchestration platforms. The Pragmatic Engineer article provides a complete mental model of how Cursor works at scale.
+**After Chapter 6:** Production agent architecture, evaluation, and orchestration platforms. The Pragmatic Engineer article provides a complete mental model of how Cursor works at scale.
 
 ---
 
@@ -151,7 +154,7 @@ Model Context Protocol (MCP) is the USB-C for AI tools -- one protocol that work
 | 4 | Let's Learn MCP with Python (Microsoft) | Complete Python tutorial | Article | https://github.com/microsoft/lets-learn-mcp-python |  | [notes/ch7/04_mcp_python_tutorial.md](notes/ch7/04_mcp_python_tutorial.md) |
 | 5 | MCP vs. Function Calling | Why MCP matters | 15 min | https://www.youtube.com/watch?v=OpmSJMM3V6E |  | [notes/ch7/05_mcp_vs_function_calling.md](notes/ch7/05_mcp_vs_function_calling.md) |
 
-After Chapter 7: How to build MCP servers and connect any agent to any tool.
+**After Chapter 7:** How to build MCP servers and connect any agent to any tool.
 
 ---
 
@@ -189,7 +192,7 @@ Level 2: Scripts, templates, and resources (loaded only when the skill explicitl
 
 As conversations grow longer, context quality degrades. Failed attempts and dead-end explorations accumulate in the context window, confusing the model. The fix: regularly summarize and start fresh, or use structured boundaries (like the spec-driven workflow from Chapter 4) to separate current work from historical noise.
 
-After Chapter 8: Reusable agent skills, effective context management across long sessions, and how RAG, MCP, and Skills work together.
+**After Chapter 8:** Reusable agent skills, effective context management across long sessions, and how RAG, MCP, and Skills work together.
 
 ---
 
@@ -207,7 +210,7 @@ Quantization (Chapter 3) trades quality for memory. SSD offloading trades *speed
 
 **Checkpoint:** Explain the difference between PagedAttention (vLLM) and SSD offloading (oLLM).
 
-After Chapter 9: Understanding of alternative memory optimization strategies beyond quantization, and when to apply each.
+**After Chapter 9:** Understanding of alternative memory optimization strategies beyond quantization, and when to apply each.
 
 ---
 
@@ -250,6 +253,9 @@ After Chapter 9: Understanding of alternative memory optimization strategies bey
 | Coding Evals -- Naman Jain (Cursor) | https://www.youtube.com/watch?v=tHN44yJoeS8 |  | [notes/quick_ref/coding_evals.md](notes/quick_ref/coding_evals.md) |
 | Cursor and WarpStream | https://www.youtube.com/watch?v=WGkadWLPORs |  | [notes/quick_ref/cursor_warpstream.md](notes/quick_ref/cursor_warpstream.md) |
 | MCP Explained for Beginners (KodeKloud) | https://www.youtube.com/watch?v=E2DEHOEbzks |  | [notes/quick_ref/mcp_beginners.md](notes/quick_ref/mcp_beginners.md) |
+| **TurboQuant Explained (Primer)** | **https://www.youtube.com/watch?v=7V0Vt2QzMDk** |  | **[notes/quick_ref/turboquant_primer.md](notes/quick_ref/turboquant_primer.md)** |
+| **TurboQuant Interactive Demo** | **https://arkaung.github.io/interactive-turboquant/** |  | **[notes/quick_ref/turboquant_interactive.md](notes/quick_ref/turboquant_interactive.md)** |
+| **TurboQuant Reality Check (Optional)** | **https://www.youtube.com/watch?v=haoAI2lIZ74** |  | **[notes/quick_ref/turboquant_reality_check.md](notes/quick_ref/turboquant_reality_check.md)** |
 
 ### Articles (Must-Read)
 
@@ -268,6 +274,43 @@ After Chapter 9: Understanding of alternative memory optimization strategies bey
 
 ### GitHub Repositories
 
-| Repository | Link | Done | Notes |
-|------------|------| --- | --- |
-|
+- https://github.com/agentskills/agentskills
+- https://github.com/imzodev/mcp-tutorial-ts
+- https://github.com/microsoft/lets-learn-mcp-python
+- https://github.com/Ruhal-Doshi/skill-depot
+
+### Optional Deep Dives
+
+| Resource | Link |
+| --- | --- |
+| Claude Code Deep Dive (Andrew Brown / freeCodeCamp) - 12 hours | https://www.youtube.com/watch?v=brLhhkUqcn4 |
+| Turbopuffer CEO interview | https://www.audible.in/podcast/Building-serverless-vector-search-with-Turbopuffer-CEO-Simon-Eskildsen/B0G27BLQZV |
+| Cursor's multi-agent architecture | https://cursor.com/blog/scaling-agents |
+| Anthropic Agent Teams | https://code.claude.com/docs/en/agent-teams |
+| Anthropic Skills announcement | https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills |
+| Build a custom Skill (Milvus) | https://milvus.io/blog/create-a-custom-anthropic-skill-for-milvus-to-quickly-spin-up-rag.md |
+
+---
+
+## How to Use This Path
+
+- Go in order -- Each chapter builds on the previous one.
+- Do the hands-on labs -- The KodeKloud videos include free sandboxes.
+- Run local LLMs -- After Chapter 3, install Ollama and experiment with quantized models.
+- Build something -- Use Chapter 8 to create an agent skill.
+- Watch the Spec-Driven Development Workshop in Chapter 4 -- It ties harness engineering and security together into a practical workflow.
+- Refer back -- The Pragmatic Engineer article on Cursor in Chapter 6 connects all the concepts to a real production system.
+
+---
+
+## One-Line Summary of Each Chapter
+
+- Chapter 1: Neural network fundamentals, embeddings, and RAG pipelines.
+- Chapter 2: How transformers work and how to build a small GPT.
+- Chapter 3: Quantized local LLMs (including TurboQuant vector quantization), memory/quality trade-offs, and basic coding agents.
+- Chapter 4: Why agent structure matters more than the model, with a spec-driven workshop that brings engineering discipline to agent workflows.
+- Chapter 5: Safe agent execution without permission prompts, with security designed into the workflow.
+- Chapter 6: How Cursor and enterprise orchestrators work in production (includes the Pragmatic Engineer deep dive).
+- Chapter 7: How MCP gives agents universal tool access
+- Chapter 8: How Skills and context engineering give agents reusable workflows and disciplined context management.
+- Chapter 9: SSD offloading as an alternative memory strategy to quantization for massive models.
