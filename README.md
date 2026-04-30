@@ -20,16 +20,16 @@ Free university lectures, engineering workshops, and industry deep dives on how 
 
 From neurons to word vectors, plus hands-on RAG.
 
-| # | Resource | Author/Source | Topic | Time | Link |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | First 20 min only (motivation) | 20 min | https://www.youtube.com/watch?v=zjkBMFhNj_g |
-| 2 | But what is a Neural Network? | 3Blue1Brown | Visual intuition | 20 min | https://www.youtube.com/watch?v=aircAruvnKk |
-| 3 | Gradient Descent, Step by Step | 3Blue1Brown | Learning process | 21 min | https://www.youtube.com/watch?v=IHZwWFHWa-w |
-| 4 | What is Backpropagation? | 3Blue1Brown | The math | 14 min | https://www.youtube.com/watch?v=Ilg3gGewQ5U |
-| 5 | Learn Statistical Regression in 40 mins! | zedstatistics (YouTube) | Foundation | 40 min | https://www.youtube.com/watch?v=eYTumjgE2IY |
-| 6 | Stanford CS224N Lecture 1 | Stanford / Christopher Manning | Word embeddings (first 35 min) | 35 min | https://www.youtube.com/watch?v=DzpHeXVSC5I |
-| 7 | Introduction to Neural Networks and Deep Learning | MIT (YouTube) | Applied deep learning | 90 min | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |
-| 8 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | Remaining 40 min (capstone) | 40 min | https://www.youtube.com/watch?v=zjkBMFhNj_g |
+| # | Resource | Author/Source | Topic | Time | Link | Done? | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | First 20 min only (motivation) | 20 min | https://www.youtube.com/watch?v=zjkBMFhNj_g | ✓ | [notes/ch1/01_intro_llms_motivation.md](notes/ch1/01_intro_llms_motivation.md) |
+| 2 | But what is a Neural Network? | 3Blue1Brown | Visual intuition | 20 min | https://www.youtube.com/watch?v=aircAruvnKk | ◐ | [notes/ch1/02_neural_network_3b1b.md](notes/ch1/02_neural_network_3b1b.md) |
+| 3 | Gradient Descent, Step by Step | 3Blue1Brown | Learning process | 21 min | https://www.youtube.com/watch?v=IHZwWFHWa-w | ✗ | [notes/ch1/03_gradient_descent.md](notes/ch1/03_gradient_descent.md) |
+| 4 | What is Backpropagation? | 3Blue1Brown | The math | 14 min | https://www.youtube.com/watch?v=Ilg3gGewQ5U |  | [notes/ch1/04_backpropagation.md](notes/ch1/04_backpropagation.md) |
+| 5 | Learn Statistical Regression in 40 mins! | zedstatistics (YouTube) | Foundation | 40 min | https://www.youtube.com/watch?v=eYTumjgE2IY |  | [notes/ch1/05_statistical_regression.md](notes/ch1/05_statistical_regression.md) |
+| 6 | Stanford CS224N Lecture 1 | Stanford / Christopher Manning | Word embeddings (first 35 min) | 35 min | https://www.youtube.com/watch?v=DzpHeXVSC5I |  | [notes/ch1/06_word_embeddings_cs224n.md](notes/ch1/06_word_embeddings_cs224n.md) |
+| 7 | Introduction to Neural Networks and Deep Learning | MIT (YouTube) | Applied deep learning | 90 min | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |  | [notes/ch1/07_mit_deep_learning_intro.md](notes/ch1/07_mit_deep_learning_intro.md) |
+| 8 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | Remaining 40 min (capstone) | 40 min | https://www.youtube.com/watch?v=zjkBMFhNj_g |  | [notes/ch1/08_intro_llms_capstone.md](notes/ch1/08_intro_llms_capstone.md) |
 
 After Chapter 1: Neural network fundamentals, embeddings, and a complete understanding of how LLMs work.
 
@@ -39,13 +39,13 @@ After Chapter 1: Neural network fundamentals, embeddings, and a complete underst
 
 The architecture behind modern AI.
 
-| # | Resource | Topic | Time | Link |
-| --- | --- | --- | --- | --- |
-| 1 | RNNs intuitively explained | Sequential data | 15 min | https://www.youtube.com/watch?v=8HyCNCN4t-k |
-| 2 | The Attention Mechanism (illustrated) | Key innovation | 20 min | https://www.youtube.com/watch?v=YAgjHMRmeR4 |
-| 3 | Transformers Explained Visually | Attention without recurrence | 25 min | https://www.youtube.com/watch?v=TQQlZhbC5iQ |
-| 4 | Andrej Karpathy -- Let's build GPT | Hands-on transformer (first 45 min) | 45 min | https://www.youtube.com/watch?v=kCc8FmEb1nY |
-| 5 | Attention is All You Need (paper explained) | Yannic Kilcher | 35 min | https://www.youtube.com/watch?v=ZXuidhZKSGk |
+| # | Resource | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | RNNs intuitively explained | Sequential data | 15 min | https://www.youtube.com/watch?v=8HyCNCN4t-k |  | [notes/ch2/01_rnns_explained.md](notes/ch2/01_rnns_explained.md) |
+| 2 | The Attention Mechanism (illustrated) | Key innovation | 20 min | https://www.youtube.com/watch?v=YAgjHMRmeR4 |  | [notes/ch2/02_attention_mechanism.md](notes/ch2/02_attention_mechanism.md) |
+| 3 | Transformers Explained Visually | Attention without recurrence | 25 min | https://www.youtube.com/watch?v=TQQlZhbC5iQ |  | [notes/ch2/03_transformers_visually.md](notes/ch2/03_transformers_visually.md) |
+| 4 | Andrej Karpathy -- Let's build GPT | Hands-on transformer (first 45 min) | 45 min | https://www.youtube.com/watch?v=kCc8FmEb1nY |  | [notes/ch2/04_build_gpt_karpathy.md](notes/ch2/04_build_gpt_karpathy.md) |
+| 5 | Attention is All You Need (paper explained) | Yannic Kilcher | 35 min | https://www.youtube.com/watch?v=ZXuidhZKSGk |  | [notes/ch2/05_attention_paper_explained.md](notes/ch2/05_attention_paper_explained.md) |
 
 After Chapter 2: How transformers work and how to build a small GPT.
 
@@ -55,18 +55,18 @@ After Chapter 2: How transformers work and how to build a small GPT.
 
 Hands-on building with LLMs: RAG pipelines, vector databases, prompt engineering, function calling, and quantization for running models on consumer hardware.
 
-| # | Resource | Author/Source | Topic | Time | Priority | Link |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | Complete RAG Tutorial 2026 (Free Labs) | KodeKloud | Hands-on RAG with vector DBs | 60 min | Must | https://www.youtube.com/watch?v=vT-DpLvf29Q |
-| 2 | Lecture 7: Agentic Coding | Missing Semester (MIT) | What are agents? (conceptual) | 60 min | Must | https://www.youtube.com/watch?v=sTdz6PZoAnw |
-| 3 | AI Agents for Beginners -- Part 1 | KodeKloud | Hands-on: API calls, tools, workflows vs. agents | 60 min | Must | https://www.youtube.com/watch?v=MZhjki7t6p8 |
-| 4 | Claude Code Essentials (short) | KodeKloud | Practical coding agent usage | 9 min | Must | https://www.youtube.com/watch?v=brLhhkUqcn4 |
-| 5 | LLM function calling explained | YouTube | How agents decide actions | 15 min | Must | https://www.youtube.com/watch?v=Gz1F6iGPH2s |
-| 6 | OpenCode: Free and Local LLMs | Infralovers | Using Ollama, local models | Article | Must | https://www.infralovers.com/blog/2026-02-27-opencode-free-local-llms/ |
-| 7 | Quantization Explained | SitePoint | 4-bit vs FP16 memory trade-offs | Article | Must | https://www.sitepoint.com/quantization-explained-q4km-vs-awq-vs-fp16-for-local-llms/ |
-| 8 | Ollama tutorial (run Llama 3 locally) | YouTube | Hands-on local LLMs | 15 min | Must | https://www.youtube.com/watch?v=WxYC9-hBM_g |
-| 9 | Build a code agent from scratch | YouTube | Hands-on open code | 60 min | Must | https://www.youtube.com/watch?v=8fFH5e4WnPA |
-| 10 | Claude Code Deep Dive | Andrew Brown / freeCodeCamp | Comprehensive 12-hour course. Optional for daily users. | 12 hours | Optional | https://www.youtube.com/watch?v=brLhhkUqcn4 |
+| # | Resource | Author/Source | Topic | Time | Priority | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Complete RAG Tutorial 2026 (Free Labs) | KodeKloud | Hands-on RAG with vector DBs | 60 min | Must | https://www.youtube.com/watch?v=vT-DpLvf29Q |  | [notes/ch3/01_rag_tutorial_kodekloud.md](notes/ch3/01_rag_tutorial_kodekloud.md) |
+| 2 | Lecture 7: Agentic Coding | Missing Semester (MIT) | What are agents? (conceptual) | 60 min | Must | https://www.youtube.com/watch?v=sTdz6PZoAnw |  | [notes/ch3/02_agentic_coding_mit.md](notes/ch3/02_agentic_coding_mit.md) |
+| 3 | AI Agents for Beginners -- Part 1 | KodeKloud | Hands-on: API calls, tools, workflows vs. agents | 60 min | Must | https://www.youtube.com/watch?v=MZhjki7t6p8 |  | [notes/ch3/03_ai_agents_beginners.md](notes/ch3/03_ai_agents_beginners.md) |
+| 4 | Claude Code Essentials (short) | KodeKloud | Practical coding agent usage | 9 min | Must | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/ch3/04_claude_code_essentials.md](notes/ch3/04_claude_code_essentials.md) |
+| 5 | LLM function calling explained | YouTube | How agents decide actions | 15 min | Must | https://www.youtube.com/watch?v=Gz1F6iGPH2s |  | [notes/ch3/05_function_calling.md](notes/ch3/05_function_calling.md) |
+| 6 | OpenCode: Free and Local LLMs | Infralovers | Using Ollama, local models | Article | Must | https://www.infralovers.com/blog/2026-02-27-opencode-free-local-llms/ |  | [notes/ch3/06_opencode_local_llms.md](notes/ch3/06_opencode_local_llms.md) |
+| 7 | Quantization Explained | SitePoint | 4-bit vs FP16 memory trade-offs | Article | Must | https://www.sitepoint.com/quantization-explained-q4km-vs-awq-vs-fp16-for-local-llms/ |  | [notes/ch3/07_quantization_explained.md](notes/ch3/07_quantization_explained.md) |
+| 8 | Ollama tutorial (run Llama 3 locally) | YouTube | Hands-on local LLMs | 15 min | Must | https://www.youtube.com/watch?v=WxYC9-hBM_g |  | [notes/ch3/08_ollama_tutorial.md](notes/ch3/08_ollama_tutorial.md) |
+| 9 | Build a code agent from scratch | YouTube | Hands-on open code | 60 min | Must | https://www.youtube.com/watch?v=8fFH5e4WnPA |  | [notes/ch3/09_code_agent_from_scratch.md](notes/ch3/09_code_agent_from_scratch.md) |
+| 10 | Claude Code Deep Dive | Andrew Brown / freeCodeCamp | Comprehensive 12-hour course. Optional for daily users. | 12 hours | Optional | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/ch3/10_claude_code_deep_dive.md](notes/ch3/10_claude_code_deep_dive.md) |
 
 Quantization Basics:
 
@@ -84,13 +84,13 @@ After Chapter 3: RAG pipelines, vector databases, prompt engineering, function c
 
 ## Chapter 4: Harness Engineering -- Why Structure Matters More Than the Model
 
-| # | Resource | Author/Source | Topic | Time | Link |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Harness Engineering article | Infralovers | Why structure > model (METR, DORA, Planner-Worker). Includes verifiability levels (formal to testable to heuristic). | Article | https://www.infralovers.com/blog/2026-03-13-harness-engineering-rahmen-wichtiger-als-modell/ |
-| 2 | Multi-agent systems vs. single-agent loops | YouTube | Planner-Worker patterns | 15 min | https://www.youtube.com/watch?v=8w9Nng35E0U |
-| 3 | Cursor's multi-agent architecture | Cursor Blog | Real-world example | Article | https://cursor.com/blog/scaling-agents |
-| 4 | Anthropic Agent Teams | Anthropic Docs | Lead + Teammates pattern | Article | https://code.claude.com/docs/en/agent-teams |
-| 5 | Spec-Driven Development Workshop | Unlearn | Write structured specs, refine prompts, stop agents from guessing wrong | 120 min | https://www.youtube.com/live/inKOU-ltbFc |
+| # | Resource | Author/Source | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Harness Engineering article | Infralovers | Why structure > model (METR, DORA, Planner-Worker). Includes verifiability levels (formal to testable to heuristic). | Article | https://www.infralovers.com/blog/2026-03-13-harness-engineering-rahmen-wichtiger-als-modell/ |  | [notes/ch4/01_harness_engineering.md](notes/ch4/01_harness_engineering.md) |
+| 2 | Multi-agent systems vs. single-agent loops | YouTube | Planner-Worker patterns | 15 min | https://www.youtube.com/watch?v=8w9Nng35E0U |  | [notes/ch4/02_multi_agent_systems.md](notes/ch4/02_multi_agent_systems.md) |
+| 3 | Cursor's multi-agent architecture | Cursor Blog | Real-world example | Article | https://cursor.com/blog/scaling-agents |  | [notes/ch4/03_cursor_multi_agent.md](notes/ch4/03_cursor_multi_agent.md) |
+| 4 | Anthropic Agent Teams | Anthropic Docs | Lead + Teammates pattern | Article | https://code.claude.com/docs/en/agent-teams |  | [notes/ch4/04_anthropic_agent_teams.md](notes/ch4/04_anthropic_agent_teams.md) |
+| 5 | Spec-Driven Development Workshop | Unlearn | Write structured specs, refine prompts, stop agents from guessing wrong | 120 min | https://www.youtube.com/live/inKOU-ltbFc |  | [notes/ch4/05_spec_driven_development.md](notes/ch4/05_spec_driven_development.md) |
 
 After Chapter 4: Why agent architecture matters more than model choice, how multi-agent systems are structured, and how spec-driven development brings engineering discipline to agent workflows.
 
@@ -100,12 +100,12 @@ After Chapter 4: Why agent architecture matters more than model choice, how mult
 
 Most sandboxes focus on preventing writes. Reading SSH keys plus network access equals instant exfiltration. The spec-driven workflow from Chapter 4 defines security boundaries at the planning stage.
 
-| # | Resource | Author/Source | Topic | Time | Link |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Sandboxing Claude Code on macOS article | Infralovers | Security fundamentals, comparison of Docker Sandboxes, Lima, Tart, read vs. write access risks | Article | https://www.infralovers.com/blog/2026-02-15-sandboxing-claude-code-macos/ |
-| 2 | Docker Sandboxes Documentation | Docker Docs | MicroVM isolation, private Docker daemon per sandbox, workspace syncing, network policies, supported agents (Claude Code, Codex, Gemini, OpenCode) | Article | https://docs.docker.com/ai/sandboxes/ |
-| 3 | Lima | Lima GitHub | Open-source macOS Linux VMs, Virtualization.framework | Article | https://github.com/lima-vm/lima |
-| 4 | Tart | Tart GitHub | CI-focused sandboxing, OCI images, Softnet network filtering | Article | https://github.com/cirruslabs/tart |
+| # | Resource | Author/Source | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Sandboxing Claude Code on macOS article | Infralovers | Security fundamentals, comparison of Docker Sandboxes, Lima, Tart, read vs. write access risks | Article | https://www.infralovers.com/blog/2026-02-15-sandboxing-claude-code-macos/ |  | [notes/ch5/01_sandboxing_claude_code.md](notes/ch5/01_sandboxing_claude_code.md) |
+| 2 | Docker Sandboxes Documentation | Docker Docs | MicroVM isolation, private Docker daemon per sandbox, workspace syncing, network policies, supported agents (Claude Code, Codex, Gemini, OpenCode) | Article | https://docs.docker.com/ai/sandboxes/ |  | [notes/ch5/02_docker_sandboxes.md](notes/ch5/02_docker_sandboxes.md) |
+| 3 | Lima | Lima GitHub | Open-source macOS Linux VMs, Virtualization.framework | Article | https://github.com/lima-vm/lima |  | [notes/ch5/03_lima_vm.md](notes/ch5/03_lima_vm.md) |
+| 4 | Tart | Tart GitHub | CI-focused sandboxing, OCI images, Softnet network filtering | Article | https://github.com/cirruslabs/tart |  | [notes/ch5/04_tart_sandboxing.md](notes/ch5/04_tart_sandboxing.md) |
 
 After Chapter 5: Safe agent execution with --dangerously-skip-permissions inside proper isolation, understanding of Docker Sandboxes microVM architecture, and security designed into the workflow.
 
@@ -115,25 +115,25 @@ After Chapter 5: Safe agent execution with --dangerously-skip-permissions inside
 
 watsonx Orchestrate and n8n: agentic AI vs. workflow engines converging. Includes the definitive Cursor architecture deep dive.
 
-| # | Resource | Topic | Time | Link |
-| --- | --- | --- | --- | --- |
-| 1 | Real-world engineering challenges: building Cursor (Pragmatic Engineer) | Complete Cursor architecture: tech stack, autocomplete, Merkle trees, Anyrun orchestrator | Article | https://newsletter.pragmaticengineer.com/p/cursor |
-| 2 | Stanford CS 153: Cursor CTO and Co-Founder Sualeh Asif | Production infrastructure, indexing, orchestrator (video) | 60 min | https://www.youtube.com/watch?v=4jDQi9P9UIw |
-| 3 | Coding Evals: From Code Snippets to Codebases -- Naman Jain (Cursor) | SWE-bench, test hacking, human preference evals | 60 min | https://www.youtube.com/watch?v=tHN44yJoeS8 |
-| 4 | The Future of Coding: Cursor and WarpStream | Streaming data at scale | 45 min | https://www.youtube.com/watch?v=WGkadWLPORs |
-| 5 | watsonx Orchestrate: Agentic AI Platform article | Agents, tools, knowledge, Langfuse | Article | https://www.infralovers.com/blog/2026-03-23-ibm-watsonx-orchestrate/ |
-| 6 | Building with watsonx Orchestrate ADK article | YAML agents, Python tools, local dev | Article | https://www.infralovers.com/blog/2026-04-20-building-with-watsonx-orchestrate/ |
-| 7 | wxO vs. n8n workflow comparison article | Agentic vs. deterministic | Article | https://www.infralovers.com/blog/2026-04-13-wxo-n8n-workflow/ |
-| 8 | How Cursor searches your code (Vector search) | Semantic search with vector embeddings | 20 min | https://www.youtube.com/watch?v=wpVgA1fisz8 |
-| 9 | Merkle trees in 5 minutes | How Cursor avoids re-indexing (generic) | 10 min | https://www.youtube.com/watch?v=Y4T3Y5wHixc |
-| 10 | How Git and Cursor sync code | Merkle trees explained (Cursor + Git by Ben Dicken) | 9 min | https://www.youtube.com/watch?v=86Elcm_6X_Y |
-| 11 | Turbopuffer architecture (CEO interview) | Vector DB on object storage | 65 min | https://www.audible.in/podcast/Building-serverless-vector-search-with-Turbopuffer-CEO-Simon-Eskildsen/B0G27BLQZV |
+| # | Resource | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Real-world engineering challenges: building Cursor (Pragmatic Engineer) | Complete Cursor architecture: tech stack, autocomplete, Merkle trees, Anyrun orchestrator | Article | https://newsletter.pragmaticengineer.com/p/cursor |  | [notes/ch6/01_cursor_pragmatic_engineer.md](notes/ch6/01_cursor_pragmatic_engineer.md) |
+| 2 | Stanford CS 153: Cursor CTO and Co-Founder Sualeh Asif | Production infrastructure, indexing, orchestrator (video) | 60 min | https://www.youtube.com/watch?v=4jDQi9P9UIw |  | [notes/ch6/02_cursor_cto_stanford.md](notes/ch6/02_cursor_cto_stanford.md) |
+| 3 | Coding Evals: From Code Snippets to Codebases -- Naman Jain (Cursor) | SWE-bench, test hacking, human preference evals | 60 min | https://www.youtube.com/watch?v=tHN44yJoeS8 |  | [notes/ch6/03_coding_evals_cursor.md](notes/ch6/03_coding_evals_cursor.md) |
+| 4 | The Future of Coding: Cursor and WarpStream | Streaming data at scale | 45 min | https://www.youtube.com/watch?v=WGkadWLPORs |  | [notes/ch6/04_cursor_warpstream.md](notes/ch6/04_cursor_warpstream.md) |
+| 5 | watsonx Orchestrate: Agentic AI Platform article | Agents, tools, knowledge, Langfuse | Article | https://www.infralovers.com/blog/2026-03-23-ibm-watsonx-orchestrate/ |  | [notes/ch6/05_watsonx_orchestrate.md](notes/ch6/05_watsonx_orchestrate.md) |
+| 6 | Building with watsonx Orchestrate ADK article | YAML agents, Python tools, local dev | Article | https://www.infralovers.com/blog/2026-04-20-building-with-watsonx-orchestrate/ |  | [notes/ch6/06_watsonx_adk.md](notes/ch6/06_watsonx_adk.md) |
+| 7 | wxO vs. n8n workflow comparison article | Agentic vs. deterministic | Article | https://www.infralovers.com/blog/2026-04-13-wxo-n8n-workflow/ |  | [notes/ch6/07_wxo_vs_n8n.md](notes/ch6/07_wxo_vs_n8n.md) |
+| 8 | How Cursor searches your code (Vector search) | Semantic search with vector embeddings | 20 min | https://www.youtube.com/watch?v=wpVgA1fisz8 |  | [notes/ch6/08_cursor_vector_search.md](notes/ch6/08_cursor_vector_search.md) |
+| 9 | Merkle trees in 5 minutes | How Cursor avoids re-indexing (generic) | 10 min | https://www.youtube.com/watch?v=Y4T3Y5wHixc |  | [notes/ch6/09_merkle_trees.md](notes/ch6/09_merkle_trees.md) |
+| 10 | How Git and Cursor sync code | Merkle trees explained (Cursor + Git by Ben Dicken) | 9 min | https://www.youtube.com/watch?v=86Elcm_6X_Y |  | [notes/ch6/10_git_cursor_merkle.md](notes/ch6/10_git_cursor_merkle.md) |
+| 11 | Turbopuffer architecture (CEO interview) | Vector DB on object storage | 65 min | https://www.audible.in/podcast/Building-serverless-vector-search-with-Turbopuffer-CEO-Simon-Eskildsen/B0G27BLQZV |  | [notes/ch6/11_turbopuffer_architecture.md](notes/ch6/11_turbopuffer_architecture.md) |
 
 ### Optional Deep Dives
 
-| Resource | Topic | Time | Link |
-|----------|-------|------|------|
-| CocoIndex (open-source) | Live codebase indexing for RAG with incremental updates | 25 min | https://www.youtube.com/watch?v=G3WstvhHO24 |
+| Resource | Topic | Time | Link | Done | Notes |
+|----------|-------|------|------| --- | --- |
+| CocoIndex (open-source) | Live codebase indexing for RAG with incremental updates | 25 min | https://www.youtube.com/watch?v=G3WstvhHO24 |  | [notes/ch6/optional_cocoindex.md](notes/ch6/optional_cocoindex.md) |
 
 After Chapter 6: Production agent architecture, evaluation, and orchestration platforms. The Pragmatic Engineer article provides a complete mental model of how Cursor works at scale.
 
@@ -143,13 +143,13 @@ After Chapter 6: Production agent architecture, evaluation, and orchestration pl
 
 Model Context Protocol (MCP) is the USB-C for AI tools -- one protocol that works across Claude, Cursor, and any MCP-compatible agent.
 
-| # | Resource | Topic | Time | Link |
-| --- | --- | --- | --- | --- |
-| 1 | MCP Explained for Beginners (KodeKloud) | What is MCP? plus flight booking demo | 30 min | https://www.youtube.com/watch?v=E2DEHOEbzks |
-| 2 | What is MCP? (conceptual deep dive) | Protocol overview | 20 min | https://www.youtube.com/watch?v=FsMVyP5-ujM |
-| 3 | MCP Tutorial with TypeScript | Build a basic server | Article | https://github.com/imzodev/mcp-tutorial-ts |
-| 4 | Let's Learn MCP with Python (Microsoft) | Complete Python tutorial | Article | https://github.com/microsoft/lets-learn-mcp-python |
-| 5 | MCP vs. Function Calling | Why MCP matters | 15 min | https://www.youtube.com/watch?v=OpmSJMM3V6E |
+| # | Resource | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | MCP Explained for Beginners (KodeKloud) | What is MCP? plus flight booking demo | 30 min | https://www.youtube.com/watch?v=E2DEHOEbzks |  | [notes/ch7/01_mcp_beginners.md](notes/ch7/01_mcp_beginners.md) |
+| 2 | What is MCP? (conceptual deep dive) | Protocol overview | 20 min | https://www.youtube.com/watch?v=FsMVyP5-ujM |  | [notes/ch7/02_mcp_conceptual.md](notes/ch7/02_mcp_conceptual.md) |
+| 3 | MCP Tutorial with TypeScript | Build a basic server | Article | https://github.com/imzodev/mcp-tutorial-ts |  | [notes/ch7/03_mcp_typescript_tutorial.md](notes/ch7/03_mcp_typescript_tutorial.md) |
+| 4 | Let's Learn MCP with Python (Microsoft) | Complete Python tutorial | Article | https://github.com/microsoft/lets-learn-mcp-python |  | [notes/ch7/04_mcp_python_tutorial.md](notes/ch7/04_mcp_python_tutorial.md) |
+| 5 | MCP vs. Function Calling | Why MCP matters | 15 min | https://www.youtube.com/watch?v=OpmSJMM3V6E |  | [notes/ch7/05_mcp_vs_function_calling.md](notes/ch7/05_mcp_vs_function_calling.md) |
 
 After Chapter 7: How to build MCP servers and connect any agent to any tool.
 
@@ -159,15 +159,15 @@ After Chapter 7: How to build MCP servers and connect any agent to any tool.
 
 Skills are folders of instructions, scripts, and resources that agents can discover and load on demand. Context engineering is the broader discipline of designing everything the model sees in its context window -- instructions, examples, data, conversation history, and tool outputs.
 
-| # | Resource | Topic | Time | Link |
-| --- | --- | --- | --- | --- |
-| 1 | Anthropic Skills announcement | What are Skills? | Article | https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills |
-| 2 | Agent Skills specification | Open standard docs | Article | https://github.com/agentskills/agentskills |
-| 3 | Build a custom Skill (Milvus RAG example) | Hands-on tutorial | Article | https://milvus.io/blog/create-a-custom-anthropic-skill-for-milvus-to-quickly-spin-up-rag.md |
-| 4 | Context Engineering: Bringing Engineering Discipline to Prompts (O'Reilly) | Science and art of context design | Article | https://www.oreilly.com/radar/context-engineering-bringing-engineering-discipline-to-prompts-part-2/ |
-| 5 | Advanced Context Engineering for AI Agents (GitHub) | Prompt templates: compaction, sub-agents, structured workflows | Article | https://github.com/marcaurelsecond/Advanced-Context-Engineering-for-AI-Agents |
-| 6 | ROSES prompting framework (Columbia University) | Role, Objective, Scenario, Expected Solution, Steps | Article | https://etc.cuit.columbia.edu/news/aicop-practical-ai-clear-prompts-useful-context |
-| 7 | Skill-depot (RAG for skills) | MCP-based skill management | Article | https://github.com/Ruhal-Doshi/skill-depot |
+| # | Resource | Topic | Time | Link | Done | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Anthropic Skills announcement | What are Skills? | Article | https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills |  | [notes/ch8/01_anthropic_skills.md](notes/ch8/01_anthropic_skills.md) |
+| 2 | Agent Skills specification | Open standard docs | Article | https://github.com/agentskills/agentskills |  | [notes/ch8/02_agent_skills_spec.md](notes/ch8/02_agent_skills_spec.md) |
+| 3 | Build a custom Skill (Milvus RAG example) | Hands-on tutorial | Article | https://milvus.io/blog/create-a-custom-anthropic-skill-for-milvus-to-quickly-spin-up-rag.md |  | [notes/ch8/03_custom_skill_milvus.md](notes/ch8/03_custom_skill_milvus.md) |
+| 4 | Context Engineering: Bringing Engineering Discipline to Prompts (O'Reilly) | Science and art of context design | Article | https://www.oreilly.com/radar/context-engineering-bringing-engineering-discipline-to-prompts-part-2/ |  | [notes/ch8/04_context_engineering_oreilly.md](notes/ch8/04_context_engineering_oreilly.md) |
+| 5 | Advanced Context Engineering for AI Agents (GitHub) | Prompt templates: compaction, sub-agents, structured workflows | Article | https://github.com/marcaurelsecond/Advanced-Context-Engineering-for-AI-Agents |  | [notes/ch8/05_advanced_context_engineering.md](notes/ch8/05_advanced_context_engineering.md) |
+| 6 | ROSES prompting framework (Columbia University) | Role, Objective, Scenario, Expected Solution, Steps | Article | https://etc.cuit.columbia.edu/news/aicop-practical-ai-clear-prompts-useful-context |  | [notes/ch8/06_roses_prompting.md](notes/ch8/06_roses_prompting.md) |
+| 7 | Skill-depot (RAG for skills) | MCP-based skill management | Article | https://github.com/Ruhal-Doshi/skill-depot |  | [notes/ch8/07_skill_depot.md](notes/ch8/07_skill_depot.md) |
 
 **What is Context Engineering?**
 
@@ -199,11 +199,11 @@ Quantization (Chapter 3) trades quality for memory. SSD offloading trades *speed
 
 **How it works:** Layer weights load from SSD → GPU one at a time. KV cache writes to SSD, loads back when needed. FlashAttention-2 avoids materializing the full attention matrix. Chunked MLP splits large intermediate computations.
 
-| # | Resource | Topic | Time | Link |
-|---|----------|-------|------|------|
-| 1 | vLLM: PagedAttention (blog) | Understanding KV cache management. Read first half. | 20 min | https://blog.vllm.ai/2023/06/20/vllm.html |
-| 2 | Inference Engineering (The infrastructure of AI) | Philip Kiely + Ben Dicken on inference at scale. Prerequisite before oLLM. | 60 min | https://www.youtube.com/watch?v=N_Nqlt8Z8kg |
-| 3 | oLLM GitHub | Full-precision 80B model on 8GB VRAM via SSD offloading. | Article | https://github.com/Mega4alik/ollm |
+| # | Resource | Topic | Time | Link | Done | Notes |
+|---|----------|-------|------|------| --- | --- |
+| 1 | vLLM: PagedAttention (blog) | Understanding KV cache management. Read first half. | 20 min | https://blog.vllm.ai/2023/06/20/vllm.html |  | [notes/ch9/01_vllm_paged_attention.md](notes/ch9/01_vllm_paged_attention.md) |
+| 2 | Inference Engineering (The infrastructure of AI) | Philip Kiely + Ben Dicken on inference at scale. Prerequisite before oLLM. | 60 min | https://www.youtube.com/watch?v=N_Nqlt8Z8kg |  | [notes/ch9/02_inference_engineering.md](notes/ch9/02_inference_engineering.md) |
+| 3 | oLLM GitHub | Full-precision 80B model on 8GB VRAM via SSD offloading. | Article | https://github.com/Mega4alik/ollm |  | [notes/ch9/03_ollm_ssd_offloading.md](notes/ch9/03_ollm_ssd_offloading.md) |
 
 **Checkpoint:** Explain the difference between PagedAttention (vLLM) and SSD offloading (oLLM).
 
@@ -227,84 +227,47 @@ After Chapter 9: Understanding of alternative memory optimization strategies bey
 
 ### Videos (Must-Watch)
 
-| Resource | Link |
-| --- | --- |
-| Intro to Large Language Models | https://www.youtube.com/watch?v=zjkBMFhNj_g |
-| But what is a Neural Network? (3Blue1Brown) | https://www.youtube.com/watch?v=aircAruvnKk |
-| Gradient Descent (3Blue1Brown) | https://www.youtube.com/watch?v=IHZwWFHWa-w |
-| Backpropagation (3Blue1Brown) | https://www.youtube.com/watch?v=Ilg3gGewQ5U |
-| Statistical Regression in 40 mins | https://www.youtube.com/watch?v=eYTumjgE2IY |
-| Stanford CS224N Lecture 1 | https://www.youtube.com/watch?v=DzpHeXVSC5I |
-| Introduction to Neural Networks and Deep Learning | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |
-| RNNs intuitively explained | https://www.youtube.com/watch?v=8HyCNCN4t-k |
-| The Attention Mechanism (illustrated) | https://www.youtube.com/watch?v=YAgjHMRmeR4 |
-| Transformers Explained Visually | https://www.youtube.com/watch?v=TQQlZhbC5iQ |
-| Andrej Karpathy -- Let's build GPT | https://www.youtube.com/watch?v=kCc8FmEb1nY |
-| Attention is All You Need (paper explained) | https://www.youtube.com/watch?v=ZXuidhZKSGk |
-| Complete RAG Tutorial 2026 (KodeKloud) | https://www.youtube.com/watch?v=vT-DpLvf29Q |
-| Lecture 7: Agentic Coding (Missing Semester) | https://www.youtube.com/watch?v=sTdz6PZoAnw |
-| AI Agents for Beginners (KodeKloud) | https://www.youtube.com/watch?v=MZhjki7t6p8 |
-| Claude Code Essentials (KodeKloud short version) | https://www.youtube.com/watch?v=brLhhkUqcn4 |
-| Spec-Driven Development Workshop | https://www.youtube.com/live/inKOU-ltbFc |
-| Stanford CS 153: Cursor CTO | https://www.youtube.com/watch?v=4jDQi9P9UIw |
-| Coding Evals -- Naman Jain (Cursor) | https://www.youtube.com/watch?v=tHN44yJoeS8 |
-| Cursor and WarpStream | https://www.youtube.com/watch?v=WGkadWLPORs |
-| MCP Explained for Beginners (KodeKloud) | https://www.youtube.com/watch?v=E2DEHOEbzks |
+| Resource | Link | Done | Notes |
+| --- | --- | --- | --- |
+| Intro to Large Language Models | https://www.youtube.com/watch?v=zjkBMFhNj_g |  | [notes/quick_ref/llm_intro.md](notes/quick_ref/llm_intro.md) |
+| But what is a Neural Network? (3Blue1Brown) | https://www.youtube.com/watch?v=aircAruvnKk |  | [notes/quick_ref/neural_network_3b1b.md](notes/quick_ref/neural_network_3b1b.md) |
+| Gradient Descent (3Blue1Brown) | https://www.youtube.com/watch?v=IHZwWFHWa-w |  | [notes/quick_ref/gradient_descent.md](notes/quick_ref/gradient_descent.md) |
+| Backpropagation (3Blue1Brown) | https://www.youtube.com/watch?v=Ilg3gGewQ5U |  | [notes/quick_ref/backpropagation.md](notes/quick_ref/backpropagation.md) |
+| Statistical Regression in 40 mins | https://www.youtube.com/watch?v=eYTumjgE2IY |  | [notes/quick_ref/statistical_regression.md](notes/quick_ref/statistical_regression.md) |
+| Stanford CS224N Lecture 1 | https://www.youtube.com/watch?v=DzpHeXVSC5I |  | [notes/quick_ref/cs224n_word_embeddings.md](notes/quick_ref/cs224n_word_embeddings.md) |
+| Introduction to Neural Networks and Deep Learning | https://www.youtube.com/watch?v=kyQ0CRkYhy4 |  | [notes/quick_ref/mit_deep_learning.md](notes/quick_ref/mit_deep_learning.md) |
+| RNNs intuitively explained | https://www.youtube.com/watch?v=8HyCNCN4t-k |  | [notes/quick_ref/rnns_explained.md](notes/quick_ref/rnns_explained.md) |
+| The Attention Mechanism (illustrated) | https://www.youtube.com/watch?v=YAgjHMRmeR4 |  | [notes/quick_ref/attention_mechanism.md](notes/quick_ref/attention_mechanism.md) |
+| Transformers Explained Visually | https://www.youtube.com/watch?v=TQQlZhbC5iQ |  | [notes/quick_ref/transformers_visually.md](notes/quick_ref/transformers_visually.md) |
+| Andrej Karpathy -- Let's build GPT | https://www.youtube.com/watch?v=kCc8FmEb1nY |  | [notes/quick_ref/build_gpt_karpathy.md](notes/quick_ref/build_gpt_karpathy.md) |
+| Attention is All You Need (paper explained) | https://www.youtube.com/watch?v=ZXuidhZKSGk |  | [notes/quick_ref/attention_paper.md](notes/quick_ref/attention_paper.md) |
+| Complete RAG Tutorial 2026 (KodeKloud) | https://www.youtube.com/watch?v=vT-DpLvf29Q |  | [notes/quick_ref/rag_tutorial.md](notes/quick_ref/rag_tutorial.md) |
+| Lecture 7: Agentic Coding (Missing Semester) | https://www.youtube.com/watch?v=sTdz6PZoAnw |  | [notes/quick_ref/agentic_coding_mit.md](notes/quick_ref/agentic_coding_mit.md) |
+| AI Agents for Beginners (KodeKloud) | https://www.youtube.com/watch?v=MZhjki7t6p8 |  | [notes/quick_ref/ai_agents_beginners.md](notes/quick_ref/ai_agents_beginners.md) |
+| Claude Code Essentials (KodeKloud short version) | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/quick_ref/claude_code_essentials.md](notes/quick_ref/claude_code_essentials.md) |
+| Spec-Driven Development Workshop | https://www.youtube.com/live/inKOU-ltbFc |  | [notes/quick_ref/spec_driven_dev.md](notes/quick_ref/spec_driven_dev.md) |
+| Stanford CS 153: Cursor CTO | https://www.youtube.com/watch?v=4jDQi9P9UIw |  | [notes/quick_ref/cursor_cto_stanford.md](notes/quick_ref/cursor_cto_stanford.md) |
+| Coding Evals -- Naman Jain (Cursor) | https://www.youtube.com/watch?v=tHN44yJoeS8 |  | [notes/quick_ref/coding_evals.md](notes/quick_ref/coding_evals.md) |
+| Cursor and WarpStream | https://www.youtube.com/watch?v=WGkadWLPORs |  | [notes/quick_ref/cursor_warpstream.md](notes/quick_ref/cursor_warpstream.md) |
+| MCP Explained for Beginners (KodeKloud) | https://www.youtube.com/watch?v=E2DEHOEbzks |  | [notes/quick_ref/mcp_beginners.md](notes/quick_ref/mcp_beginners.md) |
 
 ### Articles (Must-Read)
 
-| Resource | Link |
-| --- | --- |
-| Real-world engineering challenges: building Cursor (Pragmatic Engineer) | https://newsletter.pragmaticengineer.com/p/cursor |
-| OpenCode: Free and Local LLMs | https://www.infralovers.com/blog/2026-02-27-opencode-free-local-llms/ |
-| Harness Engineering | https://www.infralovers.com/blog/2026-03-13-harness-engineering-rahmen-wichtiger-als-modell/ |
-| Sandboxing Claude Code on macOS | https://www.infralovers.com/blog/2026-02-15-sandboxing-claude-code-macos/ |
-| watsonx Orchestrate: Agentic AI Platform | https://www.infralovers.com/blog/2026-03-23-ibm-watsonx-orchestrate/ |
-| Building with watsonx Orchestrate ADK | https://www.infralovers.com/blog/2026-04-20-building-with-watsonx-orchestrate/ |
-| wxO vs. n8n workflow comparison | https://www.infralovers.com/blog/2026-04-13-wxo-n8n-workflow/ |
-| Quantization Explained | https://www.sitepoint.com/quantization-explained-q4km-vs-awq-vs-fp16-for-local-llms/ |
-| Context Engineering (O'Reilly) | https://www.oreilly.com/radar/context-engineering-bringing-engineering-discipline-to-prompts-part-2/ |
-| ROSES Prompting Framework (Columbia) | https://etc.cuit.columbia.edu/news/aicop-practical-ai-clear-prompts-useful-context |
+| Resource | Link | Done | Notes |
+| --- | --- | --- | --- |
+| Real-world engineering challenges: building Cursor (Pragmatic Engineer) | https://newsletter.pragmaticengineer.com/p/cursor |  | [notes/articles/cursor_architecture.md](notes/articles/cursor_architecture.md) |
+| OpenCode: Free and Local LLMs | https://www.infralovers.com/blog/2026-02-27-opencode-free-local-llms/ |  | [notes/articles/opencode_local_llms.md](notes/articles/opencode_local_llms.md) |
+| Harness Engineering | https://www.infralovers.com/blog/2026-03-13-harness-engineering-rahmen-wichtiger-als-modell/ |  | [notes/articles/harness_engineering.md](notes/articles/harness_engineering.md) |
+| Sandboxing Claude Code on macOS | https://www.infralovers.com/blog/2026-02-15-sandboxing-claude-code-macos/ |  | [notes/articles/sandboxing_claude_code.md](notes/articles/sandboxing_claude_code.md) |
+| watsonx Orchestrate: Agentic AI Platform | https://www.infralovers.com/blog/2026-03-23-ibm-watsonx-orchestrate/ |  | [notes/articles/watsonx_orchestrate.md](notes/articles/watsonx_orchestrate.md) |
+| Building with watsonx Orchestrate ADK | https://www.infralovers.com/blog/2026-04-20-building-with-watsonx-orchestrate/ |  | [notes/articles/watsonx_adk.md](notes/articles/watsonx_adk.md) |
+| wxO vs. n8n workflow comparison | https://www.infralovers.com/blog/2026-04-13-wxo-n8n-workflow/ |  | [notes/articles/wxo_vs_n8n.md](notes/articles/wxo_vs_n8n.md) |
+| Quantization Explained | https://www.sitepoint.com/quantization-explained-q4km-vs-awq-vs-fp16-for-local-llms/ |  | [notes/articles/quantization.md](notes/articles/quantization.md) |
+| Context Engineering (O'Reilly) | https://www.oreilly.com/radar/context-engineering-bringing-engineering-discipline-to-prompts-part-2/ |  | [notes/articles/context_engineering.md](notes/articles/context_engineering.md) |
+| ROSES Prompting Framework (Columbia) | https://etc.cuit.columbia.edu/news/aicop-practical-ai-clear-prompts-useful-context |  | [notes/articles/roses_prompting.md](notes/articles/roses_prompting.md) |
 
 ### GitHub Repositories
 
-https://github.com/agentskills/agentskills
-https://github.com/imzodev/mcp-tutorial-ts
-https://github.com/microsoft/lets-learn-mcp-python
-https://github.com/Ruhal-Doshi/skill-depot
-
-### Optional Deep Dives
-
-| Resource | Link |
-| --- | --- |
-| Claude Code Deep Dive (Andrew Brown / freeCodeCamp) - 12 hours | https://www.youtube.com/watch?v=brLhhkUqcn4 |
-| Turbopuffer CEO interview | https://www.audible.in/podcast/Building-serverless-vector-search-with-Turbopuffer-CEO-Simon-Eskildsen/B0G27BLQZV |
-| Cursor's multi-agent architecture | https://cursor.com/blog/scaling-agents |
-| Anthropic Agent Teams | https://code.claude.com/docs/en/agent-teams |
-| Anthropic Skills announcement | https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills |
-| Build a custom Skill (Milvus) | https://milvus.io/blog/create-a-custom-anthropic-skill-for-milvus-to-quickly-spin-up-rag.md |
-
----
-
-## How to Use This Path
-
-- Go in order -- Each chapter builds on the previous one.
-- Do the hands-on labs -- The KodeKloud videos include free sandboxes.
-- Run local LLMs -- After Chapter 3, install Ollama and experiment with quantized models.
-- Build something -- Use Chapter 8 to create an agent skill.
-- Watch the Spec-Driven Development Workshop in Chapter 4 -- It ties harness engineering and security together into a practical workflow.
-- Refer back -- The Pragmatic Engineer article on Cursor in Chapter 6 connects all the concepts to a real production system.
-
----
-
-## One-Line Summary of Each Chapter
-
-- Chapter 1: Neural network fundamentals, embeddings, and RAG pipelines.
-- Chapter 2: How transformers work and how to build a small GPT.
-- Chapter 3: Quantized local LLMs, memory/quality trade-offs, and basic coding agents.
-- Chapter 4: Why agent structure matters more than the model, with a spec-driven workshop that brings engineering discipline to agent workflows.
-- Chapter 5: Safe agent execution without permission prompts, with security designed into the workflow.
-- Chapter 6: How Cursor and enterprise orchestrators work in production (includes the Pragmatic Engineer deep dive).
-- Chapter 7: How MCP gives agents universal tool access
-- Chapter 8: How Skills and context engineering give agents reusable workflows and disciplined context management.
-- Chapter 9: SSD offloading as an alternative memory strategy to quantization for massive models.
+| Repository | Link | Done | Notes |
+|------------|------| --- | --- |
+|
