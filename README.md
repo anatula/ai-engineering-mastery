@@ -111,6 +111,8 @@ Most sandboxes focus on preventing writes. Reading SSH keys plus network access 
 
 **After Chapter 5:** Safe agent execution with --dangerously-skip-permissions inside proper isolation, understanding of Docker Sandboxes microVM architecture, and security designed into the workflow.
 
+Maybe later *eBPF-based observability for sandboxes* see every syscall an agent tries to make in real-time
+
 ---
 
 ## Chapter 6: Orchestration and Workflows -- From Agents to Enterprise Systems
@@ -139,6 +141,8 @@ watsonx Orchestrate and n8n: agentic AI vs. workflow engines converging. Include
 | Claude Code Deep Dive (Andrew Brown / freeCodeCamp) | Comprehensive 12-hour course | 12 hours | https://www.youtube.com/watch?v=brLhhkUqcn4 |  | [notes/ch6/optional_claude_code_deep_dive.md](notes/ch6/optional_claude_code_deep_dive.md) |
 
 **After Chapter 6:** Production agent architecture, evaluation, and orchestration platforms. The Pragmatic Engineer article provides a complete mental model of how Cursor works at scale.
+
+Maybe later add something of LangGraph or PydanticAI.
 
 ---
 
