@@ -23,7 +23,7 @@ From neurons to word vectors, plus hands-on RAG.
 | # | Resource | Author/Source | Topic | Time | Link | Done? | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Intro to Large Language Models [1hr Talk] | Andrej Karpathy | First 20 min only (motivation) | 20 min | https://www.youtube.com/watch?v=zjkBMFhNj_g | ✓ | [notes/ch1/01_intro_llms_motivation.md](notes/ch1/01_intro_llms_motivation.md) |
-| 2 | But what is a Neural Network? | 3Blue1Brown | Visual intuition | 20 min | https://www.youtube.com/watch?v=aircAruvnKk | ◐ | [notes/ch1/02_neural_network_3b1b.md](notes/ch1/02_neural_network_3b1b.md) |
+| 2 | But what is a Neural Network? | 3Blue1Brown | Visual intuition | 20 min | https://www.youtube.com/watch?v=aircAruvnKk | ◐ | [notes/ch1/02_neural_network.md](notes/ch1/02_neural_network.md) |
 | 3 | Gradient Descent, Step by Step | 3Blue1Brown | Learning process | 21 min | https://www.youtube.com/watch?v=IHZwWFHWa-w | ✗ | [notes/ch1/03_gradient_descent.md](notes/ch1/03_gradient_descent.md) |
 | 4 | What is Backpropagation? | 3Blue1Brown | The math | 14 min | https://www.youtube.com/watch?v=Ilg3gGewQ5U |  | [notes/ch1/04_backpropagation.md](notes/ch1/04_backpropagation.md) |
 | 5 | Learn Statistical Regression in 40 mins! | zedstatistics (YouTube) | Foundation | 40 min | https://www.youtube.com/watch?v=eYTumjgE2IY |  | [notes/ch1/05_statistical_regression.md](notes/ch1/05_statistical_regression.md) |
