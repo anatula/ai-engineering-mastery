@@ -34,7 +34,7 @@ It can best understood as kind of a **compression of a good chunk of Internet** 
 
 The numbers of what's involved
 
-![](./images/training.png)
+![](./images/01/training.png)
 
 1) Take a chunk of the internet, 10 TB of text this typically comes from like a crawl of the internet so just imagine collecting tons of texts from all kinds of different websites and collecting it together 
 
@@ -57,7 +57,7 @@ I mentioned that there are these parameters, this neural network basically is ju
 3) These parameters are dispersed throughout this neural network and there's neurons and they're connected to each other and they all fire in a certain way
 4) Out comes a prediction for what word comes next, in this case, this neural network might predict that, in this context of four words, the next word will probably be *"mat"* with 97% probability 
 
-![](./images/neu-net.png)
+![](.ch1/01/dreams.png/images/neu-net.png)
 
 This is fundamentally the problem that the neural network is performing and this can show mathematically that there's **a very close relationship between prediction and compression** which is why I sort of allude to this neural network as a kind of training it is kind of like a compression of the internetbecause if you can predict  sort of the next word very accurately  you can use that to compress the data set.
 
