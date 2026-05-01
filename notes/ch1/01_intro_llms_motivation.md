@@ -65,7 +65,7 @@ So, it's just a next word prediction neural network you give it some words it gi
 
 Now the reason that what you get out of the training is actually quite a magical artifact is that basically the next word predition task you might think is a very simple objective but it's actually a pretty powerful objective because it forces you to learn a lot about the world inside the parameters of the neural network so here I took a random web page at the time when I was making this talk I just grabbed it from the main page of Wikipedia and it was about Ruth Handler:
 
-![alt text](./images/learn.png)
+![](./images/01/learn.png)
 
 So think about being the neural network and you're given some amount of words and trying to predict the next word in a sequence. In this case I'm highlighting here in red some of the words that would contain a lot of information and so for example if your objective is to predict the next word presumably your parameters have to learn a lot of this knowledge you have to know about: Ruth and Handler and when she was born and when she died  who she was  what she's done and so on and so in the task of next word prediction you're learning a ton about the world and all this knowledge is being **compressed into the weights, the parameters** 
 
@@ -80,7 +80,7 @@ Well once we've trained them I showed you that the model inferenceis is a very s
 
 So we can iterate this process and this network then **dreams internet documents** so for example if we just run the neural network or as we say *perform inference* we would get sort of like web page dreams you can almost think about it that way right because this network was trained on web pages and then you can sort of like let it loose
 
-![](./images/dreams.png)
+![](./images/01/dreams.png)
 
 On the left we have some kind of a Java code dream, in the middle we have some kind of an Amazon product dream and on the right we have something that almost looks like Wikipedia article.
 
@@ -97,7 +97,7 @@ This is where things complicate a little bit this is kind of like the schematic 
 
 This is what we call the **Transformer neural network architecture** and this is kind of like a diagram of it:
 
-![](./images/how-neu-net-work.png)
+![](./images/01/how-neu-net-work.png)
 
 What's remarkable about these neural nets is we actually understand in full detail the architecture. 
 
@@ -120,7 +120,7 @@ So long story short think of llms as kind of inscrutable artifacts they're not s
 
 ### How we actually obtain an assistant?
 
-![](./images/train-assistant.png)
+![](./images/01/train-assistant.png)
 
 So far we've only talked about these internet document generators and that's the first stage of training we call that stage **pre-training** we're now moving to the second stage of training which we call **fine-tuning** and this is where we obtain what we call an ***assistant model*** because we don't actually really just want a document generators that's not very helpful for many tasks we want to give questions to something and we want it to generate answers based on those questions so we really want an assistant model instead.
 
@@ -134,7 +134,7 @@ So we swap out the data set now and we train on these Q&A documents and this pro
 
 ### How to train your chatGPT?
 
-![](./images/summary-train.png)
+![](./images/01/summary-train.png)
 
 Roughly speaking here are the two major parts of obtaining something like chatGPT:
 
